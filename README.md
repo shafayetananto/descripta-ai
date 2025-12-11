@@ -1,16 +1,70 @@
-# React + Vite
+![descriptaAi](https://github.com/user-attachments/assets/b98dbb5f-150f-4e43-af88-11f88b6b1fea)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 🔮 DescriptaAI — AI-Powered Product Description Generator  
+DescriptaAI is an intelligent description generator that uses the Gemini API to craft polished, unique product descriptions in seconds. Perfect for e-commerce owners, marketers, and creators who need high-quality copy fast.
 
-## React Compiler
+The app offers three tone options, strict rate-limiting, smart error handling, and a smooth user experience.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 📝 **Multi-Input Form**
+Provide:
+- Product Name  
+- Product Features  
+- Target Audience  
+
+Everything is validated for accuracy before generating.
+
+### 🎭 **Tone Selection**
+Choose from:
+- **Professional**
+- **Casual**
+- **SEO-Friendly**
+
+### 🤖 **AI Output**
+Receive **three different descriptions** instantly. Each version is styled based on your chosen tone.
+
+### 📋 **Copy to Clipboard**
+Each output includes a one-click copy button for quick usage.
+
+### 🧠 **Advanced Error Handling**
+Handles:
+- Missing fields  
+- API errors  
+- Network issues  
+- Invalid responses  
+- Overuse limits  
+
+### ⏳ **Rate Limiting Included**
+- **3 generations per hour**
+- **30-second cooldown** between each search  
+Users are notified with clear messages when limits apply.
+
+---
+
+## 🧰 Tech Stack
+
+### **Frontend**
+- React  
+- Custom UI components  
+- Tailwind CSS 
+
+### **AI**
+- Gemini API  
+
+### **Logic**
+- Custom rate-limiting mechanism  
+- Clipboard API  
+- State management with React Hooks  
+
+---
+
+## 📦 Installation
+```bash
+npm install
+npm run dev
