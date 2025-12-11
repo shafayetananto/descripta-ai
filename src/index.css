@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+@theme {
+    --color-primary: #0A0E29;
+    /* --color-secondary: #2D325A;
+    --color-emphasis: #304B78; */
+    --color-accent: #2494A2;
+    --color-highlight: #DBB13B;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-20px) rotate(5deg);
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-up {
+    animation: fadeUp 0.8s ease-out;
+}
