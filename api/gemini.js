@@ -1,7 +1,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 const RATE_LIMIT_WINDOW_MS = 60 * 60 * 1000;
-
+const MAX_REQUESTS_PER_HOUR = parseInt(process.env.MAX_REQUESTS_PER_HOUR || "3", 10);
 const rateLimitStore =
   globalThis.__rateLimitStore || new Map();
 globalThis.__rateLimitStore = rateLimitStore;
@@ -56,7 +56,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: "Method not allowed" });
   }
 
-  const MAX_REQUESTS_PER_HOUR = parseInt(process.env.MAX_REQUESTS_PER_HOUR || "3", 10);
+
 
   const ip =
     req.headers["x-vercel-forwarded-for"]?.split(",")[0]?.trim() ||
